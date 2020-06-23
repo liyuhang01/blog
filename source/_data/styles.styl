@@ -1,0 +1,139 @@
+// 隐藏 valine 的 powered by
+.power.txt-right {
+	display: none;
+}
+
+// 修改不蒜子数据颜色
+#busuanzi_value_site_pv,#busuanzi_value_site_uv{
+  color: #999999;
+}
+
+// valine 评论框对齐文章
+div#comments.comments.v{
+  margin-left: 0px ;
+  margin-right: 0px ;
+  border: 0px;
+}
+
+// Valine 隐藏系统信息
+.vsys{
+  display:none !important;
+}
+
+span#inline-yellow {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #f0ad4e;
+}
+// 颜色块-绿
+span#inline-green {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #5cb85c;
+}
+// 颜色块-蓝
+span#inline-blue {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #2780e3;
+}
+// 颜色块-紫
+span#inline-purple {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #caacd9;
+}
+
+// 颜色块-橙
+span#inline-geraldine {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #f78a7a;
+}
+// 颜色块-红
+span#inline-roman {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #de5c6b;
+}
+
+a#download {
+display: inline-block;
+padding: 0 10px;
+color: #000;
+background: transparent;
+border: 2px solid #000;
+border-radius: 2px;
+transition: all .5s ease;
+font-weight: bold;
+&:hover {
+background: #000;
+color: #fff;
+}
+}
+
+
+// 头像旋转特效
+if (hexo-config('avatar.rotated')) {
+  .site-author-image {
+    transition: transform 1s ease-out;
+    animation: rotate 5s linear infinite;
+  }
+
+  @keyframes rotate{from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
+  }
+
+  .site-author-image:hover {
+    // transform: rotateZ(360deg);
+  }
+}
+
